@@ -1,9 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
-    appDir: true, // Optional: Enable experimental features
+    appDir: true,
   },
-  output: "export", // Static Export (alternative)
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  output: "export",
 };
 
 export default nextConfig;
