@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  experimental: {
+    appDir: true, // Optional: Enable experimental features
+  },
+  output: "export", // Static Export (alternative)
+};
 
 export default nextConfig;
